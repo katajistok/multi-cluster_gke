@@ -2,7 +2,7 @@
 
 Testing multi-cluster capabilities on this repository.
 
-Terraform files should work on Windows machine using PowerShell in admin mode.
+Terraform files do not work on Windows because of asm.tf and hub.tf modules which use Linux bash script to check status of deployment.
 
 As a pre-requisities, there are:
 - Existing Google Cloud project
