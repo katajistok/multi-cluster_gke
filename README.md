@@ -1,1 +1,3 @@
-# multi-cluster_gke
+# Multi-Cluster GKE
+
+Testing multi-cluster capabilities on this repository.
