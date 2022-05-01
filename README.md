@@ -6,10 +6,11 @@ Terraform files should work on Windows machine using PowerShell in admin mode.
 
 As a pre-requisities, there are:
 - Existing Google Cloud project
+- GCP Project number (is stored as tf vars)
 - Service account created and credentials stored as a json -file. This is used on main.tf -file.
-- Git installed (I use: https://gitforwindows.org/)
+- Git installed (Linux, probably already there. For Windows I use: https://gitforwindows.org/)
 - Google SDK installed (https://cloud.google.com/sdk/docs/install)
-- Authentication to GCP performed from PowerShell (gcloud auth application-default login)
+- Authenticated to GCP: gcloud auth application-default login
 
 Service account privileges:
 - roles/compute.viewer
