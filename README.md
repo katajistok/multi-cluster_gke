@@ -21,8 +21,15 @@ Service account privileges:
 - roles/iam.serviceAccountUser
 - roles/resourcemanager.projectIamAdmin (only required if service_account is set to create)
 
-Initiate directory with Terraform:
+Terraform deployment:
 - terraform init (this downloads all the plugins and modules)
 - terraform plan (test that plan is valid - does not create anything yet)
 - terraform apply (will create infrastructure)
 - To remove all: terraform destroy
+
+Known issues:
+- Does not work with Windows
+- ASM module throws namespace errors in some point
+
+For further development:
+- Activate some Anthos features: Ingress, x...
