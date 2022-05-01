@@ -33,3 +33,4 @@ Known issues:
 
 For further development:
 - Activate some Anthos features: Ingress, x...
+- test-app (Nginx) should show page where server geographic location would be easier to see --> nice demo
