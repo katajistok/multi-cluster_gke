@@ -11,6 +11,15 @@ As a pre-requisities, there are:
 - Google SDK installed (https://cloud.google.com/sdk/docs/install)
 - Authentication to GCP performed from PowerShell (gcloud auth application-default login)
 
+Service account privileges:
+- roles/compute.viewer
+- roles/compute.securityAdmin (only required if add_cluster_firewall_rules is set to true)
+- roles/container.clusterAdmin
+- roles/container.developer
+- roles/iam.serviceAccountAdmin
+- roles/iam.serviceAccountUser
+- roles/resourcemanager.projectIamAdmin (only required if service_account is set to create)
+
 Initiate directory with Terraform:
 - terraform init (this downloads all the plugins and modules)
 - terraform plan (test that plan is valid - does not create anything yet)
