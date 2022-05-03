@@ -30,7 +30,11 @@ Terraform deployment:
 Known issues:
 - Does not work with Windows
 - ASM module throws namespace errors in some point
+- Deletion of the next GCP resources does not succeed when using "terraform destroy":
+-  - subnets
+-  - firewall rules
 
 For further development:
 - Activate some Anthos features: Ingress, x...
 - test-app (Nginx) should show page where server geographic location would be easier to see --> nice demo
+- test-app: removal script (if resources won't be removed before 'terraform destroy' some of the network resources will hang)
